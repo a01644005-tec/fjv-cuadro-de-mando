@@ -39,7 +39,6 @@
     font-family:'Fraunces', serif;
   }
 
-  /* ---------- HERO ---------- */
   .hero{
     position:relative;
     background:radial-gradient(120% 140% at 15% 0%, var(--plum-800) 0%, var(--plum-950) 62%);
@@ -110,7 +109,6 @@
     color:#C9B8ED;
   }
 
-  /* ---------- LEGEND ---------- */
   .legend-bar{
     max-width:1040px;
     margin:-52px auto 0;
@@ -143,7 +141,6 @@
   .dot.a{background:var(--amarillo);}
   .dot.r{background:var(--rojo);}
 
-  /* ---------- OBJECTIVES ---------- */
   .objectives{
     max-width:1040px;
     margin:64px auto 0;
@@ -252,9 +249,13 @@
   .field-value.mono.wide{
     grid-column:1 / -1;
   }
-  .field-value em{
-    color:var(--ink-soft);
-    font-style:italic;
+  .mono-line{
+    margin:0 0 6px;
+  }
+  .mono-line:last-child{margin-bottom:0;}
+  .mono-line b{
+    color:var(--plum-950);
+    font-weight:600;
   }
 
   .semaforo{
@@ -284,11 +285,6 @@
     color:var(--ink-soft);
   }
   .card-footer strong{color:var(--ink);}
-
-  .note{
-    font-style:italic;
-    color:#9C8FB5;
-  }
 
   footer.page-footer{
     text-align:center;
@@ -322,12 +318,11 @@
 
   <main class="objectives">
 
-    <!-- 1 -->
     <article class="card">
       <div class="card-head">
         <div class="card-num">1</div>
         <div class="card-head-text">
-          <p class="card-perspectiva">Adelantado (Proceso) — Cultura organizacional</p>
+          <p class="card-perspectiva">Adelantado (Proceso) — Impacto Social / Misión</p>
           <h2 class="card-objetivo">Implementar y medir los tres pilares del propósito de la Fundación (paz interior, paz colectiva, paz comunitaria) en el 100% de las sedes activas, para mediados de 2027.</h2>
         </div>
       </div>
@@ -339,20 +334,21 @@
         <div class="grid-2">
           <div>
             <p class="field-label">Descripción del indicador</p>
-            <p class="field-value">Mide qué proporción de sedes activas tienen los 3 pilares del propósito formalmente implementados y con medición vigente.</p>
+            <p class="field-value">Mide qué proporción de sedes activas cuentan con los 3 pilares del propósito implementados y con medición vigente.</p>
           </div>
           <div>
             <p class="field-label">Meta</p>
             <p class="field-value">100% de sedes con los 3 pilares implementados y medidos para mediados de 2027.</p>
           </div>
           <div class="field-value mono wide">
-            <p class="field-label" style="margin-bottom:4px;">Forma de medición</p>
-            (N.° sedes con 3 pilares implementados y medidos ÷ N.° total sedes activas) × 100
+            <p class="field-label" style="margin-bottom:8px;">Forma de medición</p>
+            <p class="mono-line"><b>Línea base:</b> ≥70% de sedes con los 3 pilares implementados</p>
+            <p class="mono-line">(N.° sedes con 3 pilares implementados y medidos ÷ N.° total sedes activas) × 100</p>
           </div>
         </div>
         <div class="semaforo">
           <div class="sem-seg verde"><b>Verde</b>100%</div>
-          <div class="sem-seg amarillo"><b>Amarillo</b>70–99%</div>
+          <div class="sem-seg amarillo"><b>Amarillo</b>70%–99%</div>
           <div class="sem-seg rojo"><b>Rojo</b>&lt;70%</div>
         </div>
         <div class="card-footer">
@@ -362,53 +358,12 @@
       </div>
     </article>
 
-    <!-- 2 -->
     <article class="card">
       <div class="card-head">
         <div class="card-num">2</div>
         <div class="card-head-text">
-          <p class="card-perspectiva">Rezagado (Resultado) — Gestión de riesgo / Cumplimiento</p>
-          <h2 class="card-objetivo">Lograr que el 100% de las sedes activas cuenten con protocolo de protección infantil auditado y vigente, para finales de 2027.</h2>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="kpi-strip">
-          <span class="kpi-label">KPI</span>
-          <span class="kpi-value">% de sedes con protocolo auditado y vigente</span>
-        </div>
-        <div class="grid-2">
-          <div>
-            <p class="field-label">Descripción del indicador</p>
-            <p class="field-value">Mide la cobertura de sedes con protocolo de protección infantil auditado y en vigor.</p>
-          </div>
-          <div>
-            <p class="field-label">Meta</p>
-            <p class="field-value">100% de sedes con protocolo auditado y vigente para finales de 2027.</p>
-          </div>
-          <div class="field-value mono wide">
-            <p class="field-label" style="margin-bottom:4px;">Forma de medición</p>
-            (N.° sedes con protocolo auditado y vigente ÷ N.° total sedes activas) × 100
-          </div>
-        </div>
-        <div class="semaforo">
-          <div class="sem-seg verde"><b>Verde</b>100%</div>
-          <div class="sem-seg amarillo"><b>Amarillo</b>70–99%</div>
-          <div class="sem-seg rojo"><b>Rojo</b>&lt;70%</div>
-        </div>
-        <div class="card-footer">
-          <span><strong>Responsable(s):</strong> Coordinador(a) de Protección Infantil (sugerido)</span>
-          <span><strong>Frecuencia:</strong> Semestral</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- 3 -->
-    <article class="card">
-      <div class="card-head">
-        <div class="card-num">3</div>
-        <div class="card-head-text">
-          <p class="card-perspectiva">Rezagado (Outcome) — Impacto social / Beneficiarios</p>
-          <h2 class="card-objetivo">Aumentar en 15% la tasa de permanencia de NNA en los programas (Pásala, Semillero Rojiblanco, Sueña Chivas) sin abandono, para finales de 2027.</h2>
+          <p class="card-perspectiva">Rezagado (Outcome) — Impacto Social / Misión</p>
+          <h2 class="card-objetivo">Aumentar en 15% la tasa de permanencia de NNA en los programas (Pásala la Bola, Semillero Rojiblanco, Sueña Chivas) sin abandono, para finales de 2027.</h2>
         </div>
       </div>
       <div class="card-body">
@@ -419,15 +374,16 @@
         <div class="grid-2">
           <div>
             <p class="field-label">Descripción del indicador</p>
-            <p class="field-value">Mide el % de NNA que continúan en los programas sin abandonarlos, vs. línea base histórica.</p>
+            <p class="field-value">Mide el % de NNA que continúan en los programas sin abandonarlos.</p>
           </div>
           <div>
             <p class="field-label">Meta</p>
             <p class="field-value">Base + 15 puntos porcentuales de permanencia para finales de 2027.</p>
           </div>
           <div class="field-value mono wide">
-            <p class="field-label" style="margin-bottom:4px;">Forma de medición</p>
-            (N.° NNA que permanecen sin abandono ÷ N.° total NNA inscritos) × 100, comparado contra línea base
+            <p class="field-label" style="margin-bottom:8px;">Forma de medición</p>
+            <p class="mono-line"><b>Línea base:</b> ≥Base +7.5 pts porcentuales de permanencia (mitad del incremento objetivo)</p>
+            <p class="mono-line">(N.° NNA que permanecen ÷ N.° total NNA inscritos) × 100</p>
           </div>
         </div>
         <div class="semaforo">
@@ -442,80 +398,122 @@
       </div>
     </article>
 
-    <!-- 4 -->
     <article class="card">
       <div class="card-head">
-        <div class="card-num">4</div>
+        <div class="card-num">3</div>
         <div class="card-head-text">
-          <p class="card-perspectiva">Rezagado (Resultado) — Impacto social / Alcance</p>
-          <h2 class="card-objetivo">Aumentar en 10% el número de comunidades vulnerables atendidas (incl. operación en Colombia y Perú), para finales de 2027.</h2>
+          <p class="card-perspectiva">Adelantado (Desempeño) — Grupos de Interés</p>
+          <h2 class="card-objetivo">Aumentar en 15% la participación activa de las familias en el proceso formativo de los beneficiarios, para finales de 2027.</h2>
         </div>
       </div>
       <div class="card-body">
         <div class="kpi-strip">
           <span class="kpi-label">KPI</span>
-          <span class="kpi-value">% de incremento en comunidades atendidas</span>
+          <span class="kpi-value">% de familias que asisten a sesiones formativas</span>
         </div>
         <div class="grid-2">
           <div>
             <p class="field-label">Descripción del indicador</p>
-            <p class="field-value">Mide el crecimiento en comunidades vulnerables atendidas, incluyendo expansión a Colombia y Perú.</p>
+            <p class="field-value">Mide el nivel de participación de las familias en las sesiones formativas del proceso de los beneficiarios.</p>
           </div>
           <div>
             <p class="field-label">Meta</p>
-            <p class="field-value">Incremento de +10% en comunidades atendidas (incl. Colombia y Perú) para finales de 2027.</p>
+            <p class="field-value">Base + 15 puntos porcentuales de asistencia familiar para finales de 2027.</p>
           </div>
           <div class="field-value mono wide">
-            <p class="field-label" style="margin-bottom:4px;">Forma de medición</p>
-            ((Comunidades atendidas periodo actual − periodo base) ÷ periodo base) × 100
+            <p class="field-label" style="margin-bottom:8px;">Forma de medición</p>
+            <p class="mono-line"><b>Línea base:</b> ≥Base +7.5 pts de asistencia familiar (mitad del incremento objetivo)</p>
+            <p class="mono-line">(N.° familias asistentes ÷ N.° total familias) × 100</p>
           </div>
         </div>
         <div class="semaforo">
-          <div class="sem-seg verde"><b>Verde</b>≥+10%</div>
-          <div class="sem-seg amarillo"><b>Amarillo</b>+5% a +9%</div>
-          <div class="sem-seg rojo"><b>Rojo</b>&lt;+5%</div>
+          <div class="sem-seg verde"><b>Verde</b>Base +15 pts</div>
+          <div class="sem-seg amarillo"><b>Amarillo</b>Base +7.5 a +14.9 pts</div>
+          <div class="sem-seg rojo"><b>Rojo</b>&lt;Base +7.5 pts</div>
         </div>
         <div class="card-footer">
-          <span><strong>Responsable(s):</strong> Gerencia/Coordinación de Impacto Social (sugerido)</span>
-          <span><strong>Frecuencia:</strong> Trimestral, con evaluación final al cierre de 2027</span>
+          <span><strong>Responsable(s):</strong> Gerente de Programa (sugerido)</span>
+          <span><strong>Frecuencia:</strong> Trimestral</span>
         </div>
       </div>
     </article>
 
-    <!-- 5 -->
     <article class="card">
       <div class="card-head">
-        <div class="card-num">5</div>
+        <div class="card-num">4</div>
         <div class="card-head-text">
-          <p class="card-perspectiva">Financiera / Sostenibilidad <span class="note">(tipo no visible en la captura original)</span></p>
-          <h2 class="card-objetivo">Conseguir al menos 3 patrocinios corporativos multianuales <span class="note">(texto incompleto en la captura original)</span>.</h2>
+          <p class="card-perspectiva">Adelantado (Proceso) — Procesos Internos</p>
+          <h2 class="card-objetivo">Formalizar el 100% de los manuales y protocolos operativos de la metodología Pásala en Colombia y Perú, para mediados de 2027.</h2>
         </div>
       </div>
       <div class="card-body">
         <div class="kpi-strip">
           <span class="kpi-label">KPI</span>
-          <span class="kpi-value">N.° de contratos multianuales firmados</span>
+          <span class="kpi-value">% de manuales/protocolos formalizados</span>
         </div>
         <div class="grid-2">
           <div>
             <p class="field-label">Descripción del indicador</p>
-            <p class="field-value">Mide la cantidad de contratos de patrocinio corporativo con vigencia multianual firmados.</p>
+            <p class="field-value">Mide el avance en la formalización de manuales y protocolos operativos de la metodología Pásala en Colombia y Perú.</p>
           </div>
           <div>
             <p class="field-label">Meta</p>
-            <p class="field-value">≥ 3 contratos de patrocinio multianual.</p>
+            <p class="field-value">100% de manuales/protocolos formalizados en Colombia y Perú para mediados de 2027.</p>
           </div>
           <div class="field-value mono wide">
-            <p class="field-label" style="margin-bottom:4px;">Forma de medición</p>
-            Conteo directo de contratos multianuales vigentes
+            <p class="field-label" style="margin-bottom:8px;">Forma de medición</p>
+            <p class="mono-line"><b>Línea base:</b> ≥70% de manuales/protocolos formalizados</p>
+            <p class="mono-line">(N.° manuales/protocolos formalizados ÷ N.° total requeridos) × 100</p>
           </div>
         </div>
         <div class="semaforo">
-          <div class="sem-seg verde"><b>Verde</b>≥3 contratos</div>
+          <div class="sem-seg verde"><b>Verde</b>100%</div>
+          <div class="sem-seg amarillo"><b>Amarillo</b>70%–99%</div>
+          <div class="sem-seg rojo"><b>Rojo</b>&lt;70%</div>
         </div>
-        <p class="note" style="margin:-6px 0 22px;">Los umbrales de Amarillo y Rojo, así como el detalle completo de perspectiva y frecuencia, no eran visibles en la captura original.</p>
         <div class="card-footer">
-          <span><strong>Responsable(s):</strong> Procuración de Fondos <span class="note">(frecuencia no visible en la captura original)</span></span>
+          <span><strong>Responsable(s):</strong> Coordinador de Expansión Internacional (sugerido)</span>
+          <span><strong>Frecuencia:</strong> Semestral</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <div class="card-num">5</div>
+        <div class="card-head-text">
+          <p class="card-perspectiva">Adelantado (Rendimiento) — Aprendizaje y Crecimiento</p>
+          <h2 class="card-objetivo">Capacitar al 100% de los instructores y voluntarios activos en la metodología Pásala y en los tres pilares de cultura de paz, para finales de 2027.</h2>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="kpi-strip">
+          <span class="kpi-label">KPI</span>
+          <span class="kpi-value">% de instructores/voluntarios capacitados</span>
+        </div>
+        <div class="grid-2">
+          <div>
+            <p class="field-label">Descripción del indicador</p>
+            <p class="field-value">Mide el nivel de capacitación del personal e instructores en la metodología Pásala y los pilares de cultura de paz.</p>
+          </div>
+          <div>
+            <p class="field-label">Meta</p>
+            <p class="field-value">100% de instructores/voluntarios capacitados para finales de 2027.</p>
+          </div>
+          <div class="field-value mono wide">
+            <p class="field-label" style="margin-bottom:8px;">Forma de medición</p>
+            <p class="mono-line"><b>Línea base:</b> ≥70% de instructores/voluntarios capacitados</p>
+            <p class="mono-line">(N.° capacitados ÷ N.° total instructores/voluntarios activos) × 100</p>
+          </div>
+        </div>
+        <div class="semaforo">
+          <div class="sem-seg verde"><b>Verde</b>100%</div>
+          <div class="sem-seg amarillo"><b>Amarillo</b>70%–99%</div>
+          <div class="sem-seg rojo"><b>Rojo</b>&lt;70%</div>
+        </div>
+        <div class="card-footer">
+          <span><strong>Responsable(s):</strong> Coordinador de Capacitación (sugerido)</span>
+          <span><strong>Frecuencia:</strong> Semestral</span>
         </div>
       </div>
     </article>
